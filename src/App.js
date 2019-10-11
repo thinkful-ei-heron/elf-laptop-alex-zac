@@ -58,7 +58,10 @@ class App extends Component {
                     features={this.props.features} 
                     select={this.updateFeature}
         />
-        <Cart />
+        <Cart
+                    selected={this.state.selected}
+                    currency={USCurrencyFormat}
+        />
       </main>
     </div>
     );

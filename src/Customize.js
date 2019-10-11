@@ -4,10 +4,9 @@ import Part from './Part'
 class Customize extends Component {
   
   render(props) {
-    console.log(this.props.features)
     return (
       <div className="App">
-        <h1>Customize Your Laptop</h1>
+        <h2>Customize Your Laptop</h2>
         {Object.keys(this.props.features).map((feature, index) => 
         <Part featureHash={feature + '-' + index} 
               selected={this.props.selected} 
